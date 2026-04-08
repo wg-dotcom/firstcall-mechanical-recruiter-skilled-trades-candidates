@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purity C. - Recruiter – Skilled Trades | FirstCall Mechanical</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #1A4120;
+      --dark: #00558C;
+      --highlight: #00F9B8;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Poppins', sans-serif;
+      --font-body: 'Prompt', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #00F9B8); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">FirstCall Mechanical<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">Purity C.</div>
+    <div class="candidate-title">Recruiter – Skilled Trades | Kenya</div>
+    <div class="candidate-contact">
+      <span>Kenya</span>
+      <span>4 yrs Recruiting experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Proactive and results-driven Senior Talent Acquisition Specialist with proven experience in full-cycle recruitment across Kenya, the Philippines, and LATAM. Skilled in strategic sourcing, employer branding, stakeholder management, and HR leadership. Demonstrated ability to reduce time-to-hire, enhance candidate experience, and align recruitment strategies with business goals. Passionate about building high-performing teams and optimizing talent acquisition processes for international organizations.</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">Technical Skills</div>
+    <div class="skill-value">Java, SQL, Python, JavaScript</div>
+    <div class="skill-label">HR Tools</div>
+    <div class="skill-value">BreezyHR, Monday.com, Jira, Repetor, Slack, Microsoft Teams, LinkedIn Recruiter, ATS</div>
+    <div class="skill-label">Recruitment Skills</div>
+    <div class="skill-value">Full-cycle recruitment, Strategic sourcing, Employer branding, Stakeholder management, Behavioral interviews, Talent market mapping, Competitor analysis, Candidate outreach campaigns, Reference checks, Background verifications</div>
+    <div class="skill-label">HR Skills</div>
+    <div class="skill-value">Workforce planning, Talent management, Staff wellness, Labor law compliance, Payroll management, Benefits administration, Performance appraisals, L&amp;D initiatives, Employee relations, HR automation, Organizational restructuring, HR analytics</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Senior Talent Acquisition Specialist</div>
+        <div class="exp-company">Solvo Global</div>
+        <div class="exp-meta">October 2024 – Present</div>
+      </div>
+      <ul class="exp-bullets"><li>Lead full-cycle recruitment across Kenya, the Philippines, and LATAM for roles in operations, customer service, finance, IT, and executive leadership.</li><li>Partner with global hiring managers to forecast hiring needs and deliver on international sourcing strategies.</li><li>Source candidates via LinkedIn Recruiter, job boards, social media, and referrals, resulting in a 25% increase in high-quality hires.</li><li>Conduct structured behavioral interviews, leading to a 25% reduction in time-to-hire and improved retention.</li><li>Oversee ATS data integrity and drive global process improvements.</li><li>Mentor junior recruiters and present KPI reports to leadership.</li><li>Coordinate with HR and onboarding teams to ensure a seamless transition from offer acceptance to start date.</li><li>Conduct talent market mapping and competitor analysis to identify hiring trends and salary benchmarks.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Recruitment Specialist</div>
+        <div class="exp-company">GrowthFN</div>
+        <div class="exp-meta">June 2024 – Present</div>
+      </div>
+      <ul class="exp-bullets"><li>Designed recruitment strategies that improved pipeline quality by 5%.</li><li>Wrote engaging job ads and proactively sourced passive candidates across digital platforms.</li><li>Screened candidates and conducted interviews to ensure cultural and role alignment.</li><li>Collaborated with hiring teams to streamline hiring, increasing process efficiency.</li><li>Managed ATS records and supported successful onboarding.</li><li>Developed candidate outreach campaigns and utilized employer branding techniques.</li><li>Conducted reference checks and managed candidate background verifications.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Human Resource Lead</div>
+        <div class="exp-company">Alternate Doors Consulting</div>
+        <div class="exp-meta">November 2023 –</div>
+      </div>
+      <ul class="exp-bullets"><li>Designed HR strategies in workforce planning, talent management, and staff wellness.</li><li>Ensured compliance with labor laws and reviewed organizational policies.</li><li>Led recruitment campaigns that cut hiring time by 20%.</li><li>Managed payroll, benefits, performance appraisals, and L&amp;D initiatives.</li><li>Resolved employee relations issues, reducing turnover and boosting morale.</li><li>Introduced HR automation tools to improve efficiency in administrative processes.</li><li>Supported leadership in organizational restructuring and role redesign projects.</li><li>Conducted HR analytics to inform management decisions on workforce trends.</li><li>Key Accounts:</li><li>Good Info – Improved hiring process and reduced time-to-hire by 20%.</li><li>Premier Safaris (K) Ltd – Authored HR manuals and role descriptions.</li><li>Healthy U – Maintained 80% recruitment success rate.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Human Resource Assistant</div>
+        <div class="exp-company">Orchid HR Outsourcing</div>
+        <div class="exp-meta">May 2023 – October 2023</div>
+      </div>
+      <ul class="exp-bullets"><li>Supported recruitment, onboarding, and employee records.</li><li>Promoted positive culture and addressed grievances, reducing conflicts by 15%.</li><li>Assisted in appraisals, training, and benefits support.</li><li>Ensured compliance with statutory HR requirements and audits.</li><li>Provided frontline HR support and coordinated employee engagement activities.</li><li>Participated in the design and rollout of HR policies and procedures.</li><li>Key Accounts:</li><li>NCIB Insurance Brokers – Reduced time-to-hire by 25%.</li><li>The Brickhouse Counsel Ltd. – Increased departmental efficiency by 20%.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Human Resource Intern</div>
+        <div class="exp-company">Kenyatta National Hospital</div>
+        <div class="exp-meta">April 2021 – September 2021</div>
+      </div>
+      <ul class="exp-bullets"><li>Digitized 500+ files, saving 15 hours/week in admin work.</li><li>Supported onboarding and streamlined HR paperwork processes.</li><li>Scheduled interviews and supported documentation for new hires.</li><li>Assisted in employee file audits and updated personnel records.</li><li>Participated in HR staff meetings and learned hospital HR policies and labor relations practices.</li></ul>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="edu-degree">Diploma in Human Resource Management</div>
+      <div class="edu-school">The Kabete National Polytechnic</div>
+      <div class="edu-year">2020 – 2022</div>
+    </div></div>
+    
+    <div class="section"><div class="section-title">Languages</div>
+    <div class="lang-item"><strong>Kiswahili:</strong> Fluent (native)</div>
+    <div class="lang-item"><strong>English:</strong> Fluent</div>
+    <div class="lang-item"><strong>German:</strong> Conversational</div></div>
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">FirstCall Mechanical</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
