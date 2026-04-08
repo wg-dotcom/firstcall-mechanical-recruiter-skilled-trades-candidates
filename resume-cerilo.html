@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerilo I. - Recruiter – Skilled Trades | FirstCall Mechanical</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #1A4120;
+      --dark: #00558C;
+      --highlight: #00F9B8;
+      --white: #FFFFFF;
+      --gray-50: #F8FAFB;
+      --gray-100: #F1F5F4;
+      --gray-200: #E2E8E7;
+      --gray-400: #94A3A0;
+      --gray-600: #4B5E5A;
+      --gray-700: #374845;
+      --font-heading: 'Poppins', sans-serif;
+      --font-body: 'Prompt', sans-serif;
+    }
+    body { font-family: var(--font-body); background: var(--gray-50); color: var(--dark); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .back-link { display: block; background: var(--dark); padding: 12px 40px; font-family: var(--font-heading); font-size: 14px; font-weight: 500; }
+    .back-link a { color: var(--highlight); text-decoration: none; transition: color 0.2s; }
+    .back-link a:hover { color: var(--white); }
+    .back-link a::before { content: "\2190\00a0\00a0"; }
+    header { background: var(--dark); padding: 48px 40px 52px; position: relative; overflow: hidden; }
+    header::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .header-brand { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--white); letter-spacing: -0.5px; margin-bottom: 4px; }
+    .header-brand span { color: var(--highlight); }
+    .header-subtitle { font-family: var(--font-body); font-size: 14px; font-weight: 400; color: var(--gray-400); text-transform: uppercase; letter-spacing: 2px; }
+    .candidate-banner { background: linear-gradient(135deg, var(--primary), #00F9B8); padding: 36px 40px; color: var(--white); }
+    .candidate-name { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
+    .candidate-title { font-size: 16px; font-weight: 400; opacity: 0.9; margin-bottom: 12px; }
+    .candidate-contact { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; opacity: 0.85; }
+    .resume-body { max-width: 900px; margin: 0 auto; padding: 40px 40px 60px; }
+    .section { margin-bottom: 36px; }
+    .section-title { font-family: var(--font-heading); font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; padding-bottom: 10px; border-bottom: 2px solid var(--gray-200); margin-bottom: 18px; }
+    .summary-text { font-size: 15px; color: var(--gray-700); line-height: 1.75; }
+    .skills-grid { display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; font-size: 14px; }
+    .skill-label { font-weight: 600; color: var(--dark); padding: 4px 0; }
+    .skill-value { color: var(--gray-600); padding: 4px 0; line-height: 1.6; }
+    .experience-item { margin-bottom: 24px; padding-left: 20px; border-left: 3px solid var(--primary); }
+    .experience-item:last-child { margin-bottom: 0; }
+    .exp-header { margin-bottom: 8px; }
+    .exp-role { font-family: var(--font-heading); font-size: 16px; font-weight: 700; color: var(--dark); }
+    .exp-company { font-size: 14px; font-weight: 500; color: var(--primary); }
+    .exp-meta { font-size: 13px; color: var(--gray-400); margin-top: 2px; }
+    .exp-desc { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+    .exp-bullets { font-size: 14px; color: var(--gray-600); line-height: 1.65; padding-left: 20px; margin-top: 6px; }
+    .exp-bullets li { margin-bottom: 4px; }
+    .education-item, .cert-item, .lang-item { font-size: 15px; margin-bottom: 8px; }
+    .edu-degree, .cert-name { font-weight: 600; color: var(--dark); }
+    .edu-school { color: var(--primary); font-weight: 500; }
+    .edu-year { font-size: 13px; color: var(--gray-400); }
+    footer { background: var(--dark); padding: 32px 40px; text-align: center; position: relative; }
+    footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--highlight)); }
+    .footer-text { font-family: var(--font-heading); font-size: 14px; color: var(--gray-400); }
+    .footer-text strong { color: var(--white); }
+    .footer-text .accent { color: var(--highlight); }
+    .footer-sub { font-size: 12px; color: var(--gray-600); margin-top: 8px; }
+    @media (max-width: 640px) {
+      header, .candidate-banner, .resume-body, .back-link, footer { padding-left: 20px; padding-right: 20px; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .candidate-contact { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="index.html">Back to All Candidates</a></div>
+  <header>
+    <div class="header-brand">FirstCall Mechanical<span>.</span></div>
+    <div class="header-subtitle">Candidate Resume</div>
+  </header>
+  <div class="candidate-banner">
+    <div class="candidate-name">Cerilo I.</div>
+    <div class="candidate-title">Recruiter – Skilled Trades | Philippines</div>
+    <div class="candidate-contact">
+      <span>Philippines</span>
+      <span>5+ yrs Talent Acquisition experience</span>
+    </div>
+  </div>
+  <div class="resume-body">
+    <div class="section"><div class="section-title">Professional Summary</div><p class="summary-text">Results-driven Talent Acquisition Professional with over 6 years of experience in full-cycle recruitment and international sourcing. Expert in leveraging tools like Loxo, Clear Company, Indeed Smart Sourcing, LinkedIn Recruiter, and Manatal ATS to identify top-tier clinical and technical talent across the US, UK, and LATAM regions. Seeking to apply my expertise in candidate screening and stakeholder management to help your organization hire and retain high-performing teams</p></div>
+    <div class="section"><div class="section-title">Skills &amp; Tech Stack</div><div class="skills-grid">
+    <div class="skill-label">Technical Skills</div>
+    <div class="skill-value">Inbox Management, Calendar Management, Social Media Management, Graphic Design (Job post), Scheduling, Resume screening, Leads Management, Sourcing, Recruiting, Interviewing, Database Management</div>
+    <div class="skill-label">Software</div>
+    <div class="skill-value">Monday.com, Loxo, LinkedIn Recruiter, BossJob, SnupHunt, HRJazz, Manatal ATS, Hubstaff, GSuite, Canva, Zoom, Slack, Online Job Ph, Seek, Indeed</div></div></div>
+    <div class="section"><div class="section-title">Work Experience</div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">National Recruitment and Sourcing Specialist</div>
+        <div class="exp-company">MOVE/Keyple Health/OCD Anxiety Centers</div>
+        <div class="exp-meta">Jul 2024 - Jan 2026</div>
+      </div>
+      <ul class="exp-bullets"><li>Sourced and screened LPC, LMFT, LCSW, LMHC, Clinical Psychologist.</li><li>Sourced and interviewed candidates from Kosovo, the US, Philippines, Argentina, North Macedonia, and Colombia.</li><li>Conduct interviews and assess candidates' qualifications, skills, and cultural fit</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Talent Acquisition Specialist</div>
+        <div class="exp-company">SGS &amp; Co.</div>
+        <div class="exp-meta">Dec 2023 - Jul 2024</div>
+      </div>
+      <ul class="exp-bullets"><li>Coordinated with US/UK clients to gain a deep understanding of their job requirements and qualifications for open positions.</li><li>Conducted interviews with potential hires to assess their skills, experience, and suitability for the role.</li><li>Collaborated with Hiring Managers and Clients to schedule and conduct final interviews.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Talent Acquisition Specialist</div>
+        <div class="exp-company">Focusinc Group of Companies</div>
+        <div class="exp-meta">Jul 2021 - Nov 2023</div>
+      </div>
+      <ul class="exp-bullets"><li>Successfully managed the recruitment process for a variety of roles, including technical, non-technical, support, and leadership positions.</li><li>Partnered with hiring managers to define selection criteria, ideal candidate profiles, and specific job requirements for open positions.</li><li>Evaluated applications and screened candidates through phone calls, emails, and pre-interview assessments to shortlist the most qualified individuals.</li></ul>
+    </div>
+    <div class="experience-item">
+      <div class="exp-header">
+        <div class="exp-role">Sourcing Associate</div>
+        <div class="exp-company">Ubiquity Global Services</div>
+        <div class="exp-meta">Jan 2020 - Jul 2021</div>
+      </div>
+      <ul class="exp-bullets"><li>Conduct applicant mining, resume screening, phone interviews, and scheduling.</li><li>Filing and maintenance of applicant records, trackers, and databases</li></ul>
+    </div></div>
+    <div class="section"><div class="section-title">Education</div>
+    <div class="education-item">
+      <div class="edu-degree">BS Psychology</div>
+      <div class="edu-school">UNIVERSITY OF ST. LA SALLE</div>
+      <div class="edu-year">Mar 2019</div>
+    </div></div>
+    
+    
+  </div>
+  <footer>
+    <div class="footer-text">Presented by <strong>Sagan</strong> for <strong class="accent">FirstCall Mechanical</strong></div>
+    <div class="footer-sub">getsagan.com · Redefining Recruitment</div>
+  </footer>
+</body>
+</html>
